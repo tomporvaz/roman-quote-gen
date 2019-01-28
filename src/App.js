@@ -14,9 +14,24 @@ const quotesJSON = {quotes:[
     author: "Virgil"
   },
   {
-    quote: "SEMPER UBI SUB UBI",
+    quote: "Semper Ubi Sub Ubi",
     translation: "Always where under where.",
     author: "Mr. Talone"
+  },
+  {
+    quote: "In Vino Veritas",
+    translation: "There is truth in wine.",
+    author: "Pliny",
+  },
+  {
+    quote: "Male Parta Male Dilabuntur",
+    translation: "What has been wrongly gained is wrongly lost.",
+    author: "Virgil"
+  },
+  {
+    quote: "Omnium Rerum Principia Parva Sunt",
+    translation: "The beginning of all things are small.",
+    author: "Cicero"
   }
 
 
@@ -32,7 +47,16 @@ class App extends Component {
       author: "Horace"
     };
     //add bindings here
-    //this.handleClick = this.handleClick.bind(this);
+    this.handleClick = this.handleClick.bind(this);
+  }
+
+  //functions/methods, whatever you want to call them.  They handle logic
+  handleClick() {
+    const randomIndex = Math.floor(Math.random() * quotesJSON.quotes.length);
+    console.log(randomIndex);
+    this.setState({
+      quoteObj: quotesJSON.quotes[randomIndex]
+    });
   }
 
   render() {
