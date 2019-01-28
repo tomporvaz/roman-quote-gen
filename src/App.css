@@ -1,21 +1,44 @@
 body{
   height: 100%;
+  background-color: rgb(255, 245, 233);
+  
 }
 
 .header{
   text-align: center;
+  color: white;
+  font-weight: bold;
 }
 
 #quote-box{
+  position: relative;
   height: 300px;
   max-width: 500px;
-  background-color: black;
+  background-color: rgb(202, 184, 133);
   margin: auto;
-  text-familty: courier;
+  text-align: center;
+  border: groove ;
+  color: white;
 }
 
 #text{
-  color: white;
-  text-align: center;
   
+  text-align: center;
+
+}
+
+button{
+  color: black;
+}
+
+
+
+img{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  object-fit:cover;
+  height: 100vh;
+  width: 100vw;
+  z-index: -1;
 }

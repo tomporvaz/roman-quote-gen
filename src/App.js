@@ -61,7 +61,7 @@ class App extends Component {
 
   render() {
     const tweetHREF = "https://twitter.com/intent/tweet?button_hashtag=romanquotes&text=" + 
-    encodeURIComponent('"' + this.state.quoteObj.quote + '" ' + '(' + this.state.quoteObj.translation + ') ~ ' + this.state.author);
+    encodeURIComponent('"' + this.state.quoteObj.quote + '" ' + '(' + this.state.quoteObj.translation + ') ~ ' + this.state.quoteObj.author);
     
     const testHREF = "https://www.google.com/";
     
@@ -73,11 +73,12 @@ class App extends Component {
           <p id="translation">{this.state.quoteObj.translation}</p>
           <p id="author">~{this.state.quoteObj.author}</p>
           <a  id="tweet-quote" href={tweetHREF} target="_blank">
-            <button onClick={this.handleClick}>Tweet Quote</button>
+            <button onClick={this.handleClick}><i class="fab fa-twitter"></i></button>
           </a>
-          
           <button id="new-quote" onClick={this.handleClick}>New Quote</button>
         </div>
+        <img src="https://images.unsplash.com/photo-1485809885770-fefe16c8f8fb?ixlib=rb-1.2.1&auto=format&fit=crop&w=1054&q=80"></img>
+
       </div>
     );
   }
