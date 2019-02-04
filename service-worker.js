@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/roman-quote-gen/precache-manifest.59a0424da97503d851c6b95f71887b5f.js"
+  "/roman-quote-gen/precache-manifest.8b7b34ccf83869943ae16f864af8b874.js"
 );
 
 workbox.clientsClaim();

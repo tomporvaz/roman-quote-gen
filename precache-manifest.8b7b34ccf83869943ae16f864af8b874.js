@@ -20,7 +20,7 @@ self.__precacheManifest = [
     "url": "/roman-quote-gen/static/css/main.d2f8ad33.chunk.css"
   },
   {
-    "revision": "bb0519d843585532da8558c4bf2bca5f",
+    "revision": "b4a83e28bb83b99cf9f5c51eecd96d77",
     "url": "/roman-quote-gen/index.html"
   }
 ];
